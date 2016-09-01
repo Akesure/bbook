@@ -4,23 +4,12 @@
  * @flow
  */
 
-import React, { Component } from 'react';
 import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
+  AppRegistry
 } from 'react-native';
-import App from './app/containers/app'
 
-class bbook extends Component {
-  render() {
-    return (
-           <App>
-    );
-  }
-}
+import setup from './app/setup';
 
 
 
-AppRegistry.registerComponent('bbook', () => bbook);
+AppRegistry.registerComponent('bbook', setup);
